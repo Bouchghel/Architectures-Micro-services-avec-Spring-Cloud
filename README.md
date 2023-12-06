@@ -1,27 +1,33 @@
+## Commande pour lancer Consul
+> consul agent -server -bootstrap-expect=1 -data-dir=consul-data -ui -bind=192.168.43.32
+
 ## Commande pour lancer Vault
 > vault server -dev  
 ### Mise en oeuvre des micro-services avec Spring Cloud : 
 ![Architecture](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/3efe9bee-3e6d-4a9c-b25c-222194298f7a)
 #### Config Service : 
 ou on a centraliser la configuration de nos microServices dans un service :
+  
  ![ConfigService](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/e24f2c34-ebfb-4b52-a0e9-18b7d34d11aa)
-Exemple :  
+Exemple :
+  
 ![ConfigService2](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/3bad365a-a238-47f8-9b4a-9ea8e000c134)
+![ConfigServiceF](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/e54f863c-af38-4847-ba17-871fcc736026)
 
 ### Utilisation du consul comme étant un service de découverte, de surveillance et de configuration pour les architectures de microservices.
-![Consul](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/5c46e8c0-81ab-4a50-8a53-fc57a41c1df7)
+![Consul](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/5c46e8c0-81ab-4a50-8a53-fc57a41c1df7)  
 Configuration des parametres : 
 ![ConsulParam](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/daf23140-ee09-4c38-ba10-03ee8f3b9ce7)
 ![ConsulParamAff](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/ef99596b-e845-40c8-aa2b-74f64277e8af)
 ### Utilisation de vault comme étant service qui permet de partager les secrets aux différents composants d’une application distribuée
 #### Lors du demmarage vous copiez le Token pour s'authentifier a Vault
 ![vaultSignIn](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/0e9814be-3cc0-495d-9ecf-930db641d27a)
-1) Creation des Params
+1) Creation des Params :  
 ![vaultCreateParam](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/96221c14-e7bd-4dfd-8668-d39f90eaa0c4)
 ![VaultParam](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/41e697bd-81ff-4272-b1c5-08a333dfa239)
 ![VaultParamAff](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/16339d80-b9e6-4150-b199-05db778c14c3)
 
-2) envoyer les Params
+2) envoyer les Params :  
 ![VaultParamC](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/2a1f8050-3e11-4a6f-9fb7-da17f1308d47)
 visualiser les Params en tant que client
 ![VaultParam2](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/6ce3d93b-de77-43ac-860d-70e486d20735)
