@@ -22,7 +22,7 @@ public class CustomerServiceApplication {
 			customerRepository.saveAll(List.of(
 					Customer.builder().name("Ismail").email("Ismail@gmail.com").build(),
 					Customer.builder().name("Karim").email("Karim@gmail.com").build(),
-					Customer.builder().name("Hamouda").email("hamouda@gmail.com").build()
+					Customer.builder().name("Ayoub").email("Ayoub@gmail.com").build()
 			));
 			customerRepository.findAll().forEach(
 					System.out::println
