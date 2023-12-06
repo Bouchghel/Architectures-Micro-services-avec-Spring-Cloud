@@ -32,6 +32,7 @@ Configuration des parametres :
 ![VaultParamC](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/2a1f8050-3e11-4a6f-9fb7-da17f1308d47)  
 visualiser les Params en tant que client :  
 ![VaultParam2](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/6ce3d93b-de77-43ac-860d-70e486d20735)
+![VisualisationParamClient](https://github.com/Bouchghel/Architectures-Micro-services-avec-Spring-Cloud/assets/93221225/2b410925-345a-44e8-b126-d9bc88b567c5)
 
 ## Partie FrontEnd (Angular)
 ### Interaction avec la partie back end 
